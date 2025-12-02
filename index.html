@@ -122,7 +122,7 @@
 
             <picture>
                 <!-- imagem para mobile -->
-                <source media="(max-width: 768px)" srcset="image/banner-site-mobile.png" id="banner">
+                <source media="(max-width: 768px)" srcset="" id="banner">
 
                 <!-- imagem padrão (desktop) -->
                 <img src="/image/fundo-secao-03-1920-estopa-marrom-cacaufe.com_.br-2023-05-09.png" alt="" id="banner">
@@ -146,7 +146,7 @@
         </div>
         <div class="ter-cor">
             <div class="center">
-                <img src="/image/cacaucafe3d.png" alt="" class="cafe-mani">
+                <img src="" alt="" class="cafe-mani">
             </div>
         </div>
     </div>
@@ -163,6 +163,22 @@
         btnClose.addEventListener('click', () => {
             menuMobile.classList.remove('active');
         });
+
+        const el = () => document.querySelector('header .menumobile');
+        const mq = window.matchMedia('(min-width: 1024px)');
+
+        function handleMq(e) {
+            const node = el();
+            if (!node) return;
+            node.style.display = e.matches ? 'none' : '';
+        }
+
+        if (mq.addEventListener) mq.addEventListener('change', handleMq);
+        else mq.addListener(handleMq); // fallback para navegadores antigos
+
+        // inicializa
+        handleMq(mq);
+
     </script>
 
 </body>

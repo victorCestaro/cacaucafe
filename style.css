@@ -8,6 +8,8 @@
 
 body {
     margin: 0;
+
+    background-color: #FDDDC0;
 }
 
 /* menu Desktop */
@@ -482,6 +484,7 @@ body {
     transition: all 0.2s ease;
 }
 
+
 .svg:hover {
     fill: #3F1F08;
 }
@@ -542,14 +545,16 @@ body {
     display: flex;
     flex-direction: column;
 
-    
+    z-index: 9999;
+
+
 }
 
 .menu-mobile ul {
     list-style: none;
     padding: 0;
     margin-top: 40px;
-    
+
 }
 
 .menu-mobile li {
@@ -580,10 +585,14 @@ body {
     right: 0;
 }
 
+.menumobile img {
+    display: none;
+}
+
 
 /* Telas pequenas */
 @media screen and (max-width: 768px) {
-    body{
+    body {
         scrollbar-width: none;
     }
 
@@ -600,34 +609,54 @@ body {
 
     .menumobile {
         height: 4rem;
-        
+
         background: linear-gradient(140deg, #572b0b, #75380b, #99470d);
     }
 
-    .menu-mobile{
-         background: linear-gradient(140deg, #572b0b, #75380b, #99470d);
+    .menu-mobile {
+        background: linear-gradient(140deg, #572b0b, #75380b, #99470d);
     }
 
-    .footer-container{
+    .menumobile img {
         display: block;
     }
 
-    .footer-logo{
+    .titulo-clientes{
+        font-size: 2rem;
+    }
+
+    .texto-clientes{
+        width: 90%;
+        height: auto;
+
+        margin: auto;
+
+        margin-top: 20rem;
+
+        color: black;
+    }
+
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-logo {
         width: 100%;
         height: auto;
     }
 
-    .footer-logo img{
+    .footer-logo img {
         width: 8rem;
     }
 
-    .container{
+    .container {
         width: 100%;
 
-        margin-top: -2rem;
+        margin-top: -2.5rem;
     }
 
-    .logo img{
+    .logo img {
         width: 4rem;
 
         top: 0.3rem;
@@ -635,52 +664,52 @@ body {
         position: absolute;
     }
 
-    .center{
+    .center {
         display: block;
     }
 
-    .model{
+    .model {
         width: 100%;
         height: auto;
 
         margin-top: 0;
     }
 
-    #foto-fazenda{
+    #foto-fazenda {
         border-radius: 0.3rem;
     }
 
-    .cor{
+    .cor {
         height: auto;
-        margin-top: -1rem;
+        margin-top: -1.5rem;
     }
 
-    .ter-cor{
+    .ter-cor {
         width: 100%;
         height: auto;
     }
 
-    #meuVideo{
+    #meuVideo {
         width: 90%;
         height: auto;
 
         margin-top: 2rem;
     }
 
-    .titulo{
+    .titulo {
         width: 100%;
         text-align: center;
     }
 
-    .texto{
+    .texto {
         width: 100%;
     }
 
-    .cafe-mani{
+    .cafe-mani {
         width: 90%;
     }
 
-    .image-loja{
+    .image-loja {
         height: auto;
         margin-top: 0;
     }
