@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Importar fontes externas .ttf */
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('fontes/PassionSansPDag-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+}
+
+/* menu Desktop */
+
+.menu-desktop {
+    width: 100%;
+    height: 5rem;
+
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    z-index: 999999999999999;
+
+    background: linear-gradient(140deg, #572b0b, #75380b, #99470d);
+}
+
+
+.menu-links {
+    width: auto;
+    height: auto;
+
+    margin: auto;
+
+}
+
+.btn-menu {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Maven Pro', sans-serif;
+    color: #e9dddd;
+
+    margin-left: 1rem;
+
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-menu:hover {
+    color: white;
+    text-shadow: 0rem 0rem 0.2rem #ffffff9f;
+}
+
+
+.btn-talk {
+    width: 10rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+
+    margin-left: 12rem;
+
+    color: white;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    background-color: transparent;
+}
+
+.btn-talk:hover {
+    background-color: white;
+    color: black;
+}
+
+/* contents index */
+
+
+.image-loja {
+    width: 100%;
+    height: 32rem;
+    overflow: hidden;
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    width: 85%;
+    height: auto;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.model {
+    width: 50%;
+    height: 45rem;
+}
+
+.cor {
+    width: 100%;
+    height: auto;
+    background-color: #E0B97B;
+}
+
+#foto-fazenda {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'MinhaFonte', sans-serif;
+    color: #3F1F08;
+
+    margin-bottom: 1rem;
+}
+
+.sub-titulo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #3F1F08;
+
+    margin-bottom: 2rem;
+}
+
+.texto {
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #3F1F08;
+
+    margin-bottom: 1rem;
+}
+
+.seg-cor {
+    width: 100%;
+    height: auto;
+    background-color: #FDDDC0;
+}
+
+.ter-cor {
+    width: 100%;
+    height: 40rem;
+
+    margin-top: -1rem;
+    background-color: #FDDDC0;
+}
+
+.clientes-opt {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.clientes-opt img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+#Camada_2 {
+    width: 2.5rem;
+    height: auto;
+}
+
+
+.cafeteria-page {
+    padding: 60px 20px;
+    background: #f5d7bd;
+    /* tom da sua identidade */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #4a2f1b;
+}
+
+.info-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: #f3cdaa;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    font-family: 'Roboto Condensed';
+    color: #3F1F08;
+}
+
+.info-card i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #4a2f1b;
+    display: block;
+}
+
+.map-box {
+    margin-top: 30px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+#logomenu {
+    width: auto;
+    height: 4rem;
+
+    margin-top: 0rem;
+    margin-left: 10rem;
+}
+
+
+
+.contato-container {
+    background: #d9ac6b;
+    /* bege padrão CacauCafé */
+    padding: 70px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contato-wrapper {
+    max-width: 750px;
+    margin: auto;
+    text-align: left;
+    color: #5a2e22;
+}
+
+.contato-wrapper h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contato-wrapper .sub {
+    font-size: 17px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 70%;
+    padding: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background: #ffffff;
+    color: #5a2e22;
+    outline: none;
+}
+
+.linha-dupla {
+    display: flex;
+    gap: 20px;
+}
+
+.linha-dupla input {
+    width: 30%;
+}
+
+.contato-form textarea {
+    height: 160px;
+    resize: none;
+}
+
+.btn-enviar {
+    background: #0d713d;
+    /* verde CacauCafé */
+    color: #fff;
+    padding: 16px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-enviar:hover {
+    background: #08572e;
+}
+
+.coffee-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.grid-container {
+    display: grid;
+    /* Cria colunas automáticas. Mínimo de 300px, máximo ocupa o espaço livre */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: start;
+}
+
+/* --- Estilo dos Cards --- */
+.card {
+    background: transparent;
+    /* Mantendo simples, sem fundo branco no card inteiro */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efeito sutil de levantar ao passar o mouse */
+}
+
+/* Container da Imagem */
+.image-wrapper {
+    width: 100%;
+    height: 300px;
+    /* Altura fixa para alinhar tudo */
+    overflow: hidden;
+    border-radius: var(--radius);
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem preencha sem distorcer */
+    transition: transform 0.5s ease;
+}
+
+.card:hover .image-wrapper img {
+    transform: scale(1.05);
+    /* Zoom suave na imagem */
+}
+
+/* Tipografia */
+.card h3 {
+    font-family: 'MinhaFonte', serif;
+    /* Fonte elegante para títulos */
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.titulo-clientes {
+
+
+    width: 26rem;
+
+    font-family: 'MinhaFonte';
+    font-size: 3.4rem;
+    color: white;
+}
+
+.texto-clientes {
+    width: 45rem;
+    height: auto;
+    position: absolute;
+
+    top: 164.5rem;
+    right: 0rem;
+
+}
+
+.avaliacao {
+    font-family: 'Roboto Condensed';
+    font-size: 1.7rem;
+    color: white;
+
+    width: 80%;
+}
+
+.nota {
+    font-family: 'Roboto Condensed';
+    font-size: 1.3rem;
+    color: white;
+
+    font-weight: 300
+}
+
+.cafe-mani {
+    height: 39.3rem;
+
+    margin-top: 0.7rem;
+}
+
+#meuVideo {
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+}
+
+/* Footer */
+
+.footer {
+    background: #f3cdaa;
+    /* cor do exemplo */
+    padding: 50px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 1000px;
+    /* deixa mais compacto */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logo img {
+    width: 14rem;
+}
+
+.footer-social h3,
+.footer-menu h3,
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #5a3a1e;
+    font-weight: 600;
+}
+
+.footer-social .icons a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #b0713c;
+    text-decoration: none;
+}
+
+.svg {
+    width: 2rem;
+    height: auto;
+    fill: #C2884F;
+
+    background-size: contain;
+
+
+    transition: all 0.2s ease;
+}
+
+.svg:hover {
+    fill: #3F1F08;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #5a3a1e;
+    font-size: 15px;
+}
+
+.sub-menu {
+    margin-left: 15px;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #5a3a1e;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #5a3a1e;
+    opacity: 0.8;
+}
+
+
+/* Botão hambúrguer */
+.hamburger {
+    font-size: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+
+    color: white;
+}
+
+/* Menu lateral */
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* escondido fora da tela */
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    
+}
+
+.menu-mobile li {
+    margin: 15px 0;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: 1.5rem;
+
+    font-weight: 600;
+}
+
+.menu-mobile .close {
+    font-size: 32px;
+    background: none;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+
+    color: white;
+}
+
+/* Quando ativo */
+.menu-mobile.active {
+    right: 0;
+}
+
+
+/* Telas pequenas */
+@media screen and (max-width: 768px) {
+    body{
+        scrollbar-width: none;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .hamburger {
+        margin-top: 0.5rem;
+        right: 2rem;
+        display: block;
+        position: absolute;
+    }
+
+    .menumobile {
+        height: 4rem;
+        
+        background: linear-gradient(140deg, #572b0b, #75380b, #99470d);
+    }
+
+    .menu-mobile{
+         background: linear-gradient(140deg, #572b0b, #75380b, #99470d);
+    }
+
+    .footer-container{
+        display: block;
+    }
+
+    .footer-logo{
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-logo img{
+        width: 8rem;
+    }
+
+    .container{
+        width: 100%;
+
+        margin-top: -2rem;
+    }
+
+    .logo img{
+        width: 4rem;
+
+        top: 0.3rem;
+        left: 3rem;
+        position: absolute;
+    }
+
+    .center{
+        display: block;
+    }
+
+    .model{
+        width: 100%;
+        height: auto;
+
+        margin-top: 0;
+    }
+
+    #foto-fazenda{
+        border-radius: 0.3rem;
+    }
+
+    .cor{
+        height: auto;
+        margin-top: -1rem;
+    }
+
+    .ter-cor{
+        width: 100%;
+        height: auto;
+    }
+
+    #meuVideo{
+        width: 90%;
+        height: auto;
+
+        margin-top: 2rem;
+    }
+
+    .titulo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    .cafe-mani{
+        width: 90%;
+    }
+
+    .image-loja{
+        height: auto;
+        margin-top: 0;
+    }
+}
