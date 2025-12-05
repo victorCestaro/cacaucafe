@@ -9,7 +9,7 @@
 body {
     margin: 0;
 
-    background-color: #FDDDC0;
+    background-color: rgb(250, 245, 239);
 }
 
 /* menu Desktop */
@@ -81,8 +81,14 @@ body {
 
 .image-loja {
     width: 100%;
-    height: 32rem;
+    height: auto;
     overflow: hidden;
+
+    margin: auto;
+}
+
+.image-loja img {
+    width: 100%;
 }
 
 #banner {
@@ -95,6 +101,8 @@ body {
 .container {
     width: 100%;
     height: auto;
+
+    margin-top: -1rem;
 }
 
 .center {
@@ -122,6 +130,8 @@ body {
 
 #foto-fazenda {
     width: 100%;
+
+    border-radius: 0.5rem;
 }
 
 .titulo {
@@ -401,7 +411,7 @@ body {
     height: auto;
     position: absolute;
 
-    top: 164.5rem;
+    top: 178.5rem;
     right: 0rem;
 
 }
@@ -589,11 +599,224 @@ body {
     display: none;
 }
 
+.banner-cafe {
+    width: 100%;
+    height: 5.5rem;
+
+    background-color: blue;
+}
+
+.banner-cafe img {
+    width: 100%;
+}
+
+#banner-mobile {
+    width: auto;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.container-produtos {
+    width: 90%;
+    height: auto;
+
+    margin: auto;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.filtros {
+    width: 20%;
+    height: 100%;
+
+    margin-top: 1rem;
+}
+
+.contents-produtos {
+    width: 80%;
+    height: 100%;
+
+    gap: 40px;
+
+}
+
+.loja {
+    padding: 40px 0;
+}
+
+.filtro {
+    width: 12rem;
+    height: 100%;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+
+    font-family: 'Roboto Condensed';
+    font-size: 1.2rem;
+}
+
+.filtro-grupo {
+    display: block;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.filtro-grupo span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 1;
+
+    margin-top: 2rem;
+}
+
+.produto-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.336);
+
+    overflow: hidden;
+
+    transition: all 0.2s ease;
+}
+
+.image-produtos {
+    width: 100%;
+    height: 15rem;
+
+    object-fit: cover;
+    /* ou contain */
+    display: block;
+
+    transition: all 0.5s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.8rem 0.2rem rgba(0, 0, 0, 0.336);
+}
+
+.produto-card:hover .image-produtos{
+    transform: scale(1.05);
+}
+
+.produtos-info {
+    width: auto;
+    height: auto;
+
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.2rem;
+    padding-right: 1rem;
+}
+
+.image-produtos img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 0;
+
+    object-fit: cover;
+    /* ou contain */
+    display: block;
+
+    transition: all 0.5s ease;
+}
+
+.produto-card h4 {
+    font-size: 16px;
+    font-family: 'Roboto Condensed';
+}
+
+.produto-card p {
+    margin: 0 0 12px;
+    color: #555;
+    font-family: 'Roboto Condensed';
+}
+
+.produto-card strong {
+    font-size: 18px;
+    color: #000;
+
+    font-family: 'Roboto Condensed';
+}
+
+.select-pag {
+    width: 100%;
+    height: 4rem;
+
+    margin-top: 1rem;
+
+    background-color: red;
+}
+
+.aviso{
+    width: 90%;
+    height: 45rem;
+
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.aviso-logo{
+    width: 15rem;
+    height: auto;
+
+
+}
+
+.avisoh1{
+
+    font-family: 'Roboto Condensed';
+    font-size: 2.5rem;
+    color: #3F1F08;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filtros {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .produtos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .filtros {
+        padding: 0px;
+    }
+}
+
 
 /* Telas pequenas */
 @media screen and (max-width: 768px) {
     body {
         scrollbar-width: none;
+    }
+
+    .container-produtos {
+        display: block;
+    }
+
+    #banner {
+        display: none;
     }
 
     .menu-desktop {
@@ -621,11 +844,11 @@ body {
         display: block;
     }
 
-    .titulo-clientes{
+    .titulo-clientes {
         font-size: 2rem;
     }
 
-    .texto-clientes{
+    .texto-clientes {
         width: 90%;
         height: auto;
 
@@ -706,11 +929,50 @@ body {
     }
 
     .cafe-mani {
+        display: none;
+    }
+
+    .texto-clientes {
         width: 90%;
+        height: auto;
+
+        margin-top: -2rem;
+        margin: auto;
+        position: initial;
+    }
+
+    .titulo-clientes {
+        font-size: 1.6rem;
+        color: #3F1F08;
+    }
+
+    .avaliacao {
+        font-size: 1.3rem;
+        color: #572b0b;
+    }
+
+    .nota {
+        color: #99470d;
     }
 
     .image-loja {
         height: auto;
         margin-top: 0;
+    }
+
+    .contato-container {
+        width: auto;
+    }
+
+    .contato-wrapper {
+        width: 100%;
+    }
+
+    .contato-form {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
     }
 }

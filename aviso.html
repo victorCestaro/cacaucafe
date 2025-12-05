@@ -6,79 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="/image/logotipo-colorido-transparente-01-cacaucafe-2023-10-31.webp">
-    <title>CacauCafé - Contato</title>
+    <title>CacauCafé - Produtos</title>
 </head>
 
 <body>
-    <header class="menu-desktop">
-        <a href="/index.html"> <img src="/image/logotipo-branco-transparente-cacaucafe-2023-11-08.png" alt=""
-                id="logomenu"></a>
-        <nav class="menu-links">
-
-            <a href="/index.html" class="btn-menu">CacauCafé</a>
-            <a href="/cafeterias.html" class="btn-menu">Cafeterias</a>
-            <a href="/produtos.html" class="btn-menu">Produtos</a>
-            <a href="servicos.html" class="btn-menu">Serviços</a>
-            <a href="/contato.html" class="btn-menu">Contato</a>
-            <a href="https://api.whatsapp.com/message/MX5MMUEFIKK6B1?autoload=1&app_absent=0"><button
-                    class="btn-talk">Fale Conosco</button></a>
-        </nav>
-    </header>
-    <header class="menumobile">
-        <div class="logo"><img src="/image/logotipo-branco-transparente-cacaucafe-2023-11-08.png" alt=""></div>
-
-        <button class="hamburger" id="btnMenu">
-            ☰
-        </button>
-
-        <nav class="menu-mobile" id="menuMobile">
-            <button class="close" id="btnClose">×</button>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cafeterias.html">Cafeterias</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>  
-            </ul>
-        </nav>
-    </header>
-    <section class="contato-container">
-        <div class="contato-wrapper">
-
-            <h2>Entre em Contato</h2>
-            <p class="sub">Fale com a CacauCafé, será um prazer te atender!</p>
-
-            <form class="contato-form" action="https://formsubmit.co/cacaucafe@cacaucafe.com.br" method="POST">
-
-                <input type="text" placeholder="Nome" required>
-
-                <div class="linha-dupla">
-                    <input type="email" name="email" placeholder="Seu E-mail" required>
-                    <input type="text" name="telefone" placeholder="Seu Telefone" required>
-                </div>
-
-                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
-
-                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-
-            </form>
-
+  
+    <div class="aviso">
+        <div class="center">
+            <img src="/image/logotipo-colorido-transparente-01-cacaucafe-2023-10-31.webp" alt="" class="aviso-logo">
         </div>
-    </section>
-
-    <script>
-        const btnMenu = document.getElementById('btnMenu');
-        const btnClose = document.getElementById('btnClose');
-        const menuMobile = document.getElementById('menuMobile');
-
-        btnMenu.addEventListener('click', () => {
-            menuMobile.classList.add('active');
-        });
-
-        btnClose.addEventListener('click', () => {
-            menuMobile.classList.remove('active');
-        });
-    </script>
+        <div class="center">
+            
+            <h1 class="avisoh1">Estamos preparando algo novo pra você</h1>
+        </div>
+    </div>
 
 </body>
 <footer class="footer">
@@ -114,7 +55,8 @@
                 <ul class="sub-menu">
                     <li><a href="cafeterias.html">São Carlos - SP</a></li>
                 </ul>
-                <li><a href="contato">Contato</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
 

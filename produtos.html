@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="/image/logotipo-colorido-transparente-01-cacaucafe-2023-10-31.webp">
-    <title>CacauCafé - Contato</title>
+    <title>CacauCafé - Produtos</title>
 </head>
 
 <body>
@@ -38,34 +38,123 @@
                 <li><a href="cafeterias.html">Cafeterias</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>  
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <section class="contato-container">
-        <div class="contato-wrapper">
 
-            <h2>Entre em Contato</h2>
-            <p class="sub">Fale com a CacauCafé, será um prazer te atender!</p>
+    <div class="banner-cafe">
+        <picture>
+            <!-- imagem para mobile -->
+            <source media="(max-width: 768px)" srcset="image/banner-site-pc.png" id="banner-mobile">
 
-            <form class="contato-form" action="https://formsubmit.co/cacaucafe@cacaucafe.com.br" method="POST">
+            <!-- imagem padrão (desktop) -->
+            <img src="image/banner-site-pc.png" alt="Cacau Café">
+        </picture>
+    </div>
 
-                <input type="text" placeholder="Nome" required>
+    <div class="container-produtos">
+        <div class="filtros">
+            <!-- Seção de Filtros + Produtos -->
+            <div class="filtro">
+                <h3>Filtrar por:</h3>
 
-                <div class="linha-dupla">
-                    <input type="email" name="email" placeholder="Seu E-mail" required>
-                    <input type="text" name="telefone" placeholder="Seu Telefone" required>
+                <div class="filtro-grupo">
+                    <span>Tipo de Café</span>
+                    <label><input type="checkbox"> Grão Inteiro</label>
+                    <label><input type="checkbox"> Moído</label>
+                    <label><input type="checkbox"> Cápsula</label>
                 </div>
 
-                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <div class="filtro-grupo">
+                    <span>Torra</span>
+                    <label><input type="checkbox"> Clara</label>
+                    <label><input type="checkbox"> Média</label>
+                    <label><input type="checkbox"> Escura</label>
+                </div>
 
-                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                <div class="filtro-grupo">
+                    <span>Origem</span>
+                    <label><input type="checkbox"> Brasil</label>
+                    <label><input type="checkbox"> Colômbia</label>
+                    <label><input type="checkbox"> Etiópia</label>
+                    <label><input type="checkbox"> Costa Rica</label>
+                </div>
 
-            </form>
-
+                <div class="filtro-grupo">
+                    <span>Intensidade</span>
+                    <label><input type="checkbox"> Suave</label>
+                    <label><input type="checkbox"> Equilibrado</label>
+                    <label><input type="checkbox"> Intenso</label>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="contents-produtos">
+            <div class="produtos">
+                <div class="produto-card">
+                    <div class="image-produtos">
+                        <img src="/image/foto-saco-cafe-grao-moido-cacaucafe-araraquara-havan-2024-01-06.jpg" alt="Café Especial Mogiana">
+                    </div>
+                    <div class="produtos-info">
+                        <h4>Café Especial Mogiana</h4>
+                        <p>Notas de caramelo e chocolate. Torra média. 250g</p>
+                        <strong>R$ 45,00</strong>
+                    </div>
+                </div>
 
+                <div class="produto-card">
+                    <div class="image-produtos">
+                        <img src="image/foto-saco-cafe-grao-moido-cacaucafe-araraquara-havan-2024-01-06.jpg" alt="Café Blend da Casa">
+                    </div>
+                    <div class="produtos-info">
+                        <h4>Café Blend da Casa</h4>
+                        <p>Equilibrado com acidez suave. Torra médio-escura. 500g</p>
+                        <strong>R$ 39,90</strong>
+                    </div>
+                </div>
+
+                <div class="produto-card">
+                    <div class="image-produtos">
+                        <img src="image/foto-saco-cafe-grao-moido-cacaucafe-araraquara-havan-2024-01-06.jpg" alt="Cápsulas Espresso Intenso">
+                    </div>
+                    <div class="produtos-info">
+                        <h4>Cápsulas Espresso Intenso</h4>
+                        <p>Corpo volumoso e crema persistente. 10 unidades</p>
+                        <strong>R$ 29,90</strong>
+                    </div>
+                </div>
+
+                <div class="produto-card">
+                    <img src="cafe3.jpg" alt="Café Orgânico Sul de Minas">
+                    <div class="produtos-info">
+                        <h4>Café Orgânico Sul de Minas</h4>
+                        <p>Frutado com notas cítricas. Torra clara. 250g</p>
+                        <strong>R$ 49,90</strong>
+                    </div>
+                </div>
+
+                <div class="produto-card">
+                    <img src="kit.jpg" alt="Kit Degustação CacauCafé">
+                    <div class="produtos-info">
+                        <h4>Kit Degustação CacauCafé</h4>
+                        <p>Uma seleção dos nossos melhores cafés. 4x 100g</p>
+                        <strong>R$ 79,90</strong>
+                    </div>
+                </div>
+
+                <div class="produto-card">
+                    <img src="cafe4.jpg" alt="Café Especial Cerrado Mineiro">
+                    <div class="produtos-info">
+                        <h4>Café Especial Cerrado Mineiro</h4>
+                        <p>Notas de mel, nozes e chocolate amargo. Torra escura. 500g</p>
+                        <strong>R$ 55,00</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="select-pag"></div>
+        </div>
+
+    </div>
     <script>
         const btnMenu = document.getElementById('btnMenu');
         const btnClose = document.getElementById('btnClose');
@@ -114,7 +203,8 @@
                 <ul class="sub-menu">
                     <li><a href="cafeterias.html">São Carlos - SP</a></li>
                 </ul>
-                <li><a href="contato">Contato</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
 
