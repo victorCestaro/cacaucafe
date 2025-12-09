@@ -131,6 +131,8 @@ body {
 #foto-fazenda {
     width: 100%;
 
+    box-shadow: 0.7rem 0.7rem 0.2rem  rgba(0, 0, 0, 0.327);
+
     border-radius: 0.5rem;
 }
 
@@ -173,6 +175,7 @@ body {
     height: 40rem;
 
     margin-top: -1rem;
+    position: relative;
     background-color: #FDDDC0;
 }
 
@@ -222,7 +225,7 @@ body {
     background: #f3cdaa;
     padding: 25px;
     border-radius: 14px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.7rem 0.3rem rgba(0, 0, 0, 0.346);
 
     font-family: 'Roboto Condensed';
     color: #3F1F08;
@@ -443,6 +446,10 @@ body {
     height: 100%;
 
     margin: auto;
+
+    position: relative;
+
+    margin-top: 4rem;
 }
 
 /* Footer */
@@ -900,6 +907,8 @@ body {
 
     #foto-fazenda {
         border-radius: 0.3rem;
+
+        
     }
 
     .cor {
